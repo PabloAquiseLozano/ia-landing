@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { DrawerLayout } from "./DrawerLayout.jsx";
+import { useNavigate } from "react-router-dom";
 
 export const HeaderLayout = () => {
   const [isVisibleDrawer, setIsVisibleDrawer] = useState(false);
@@ -10,6 +11,10 @@ export const HeaderLayout = () => {
   const onSetIsVisibleDrawer = () => {
     setIsVisibleDrawer(true);
   };
+
+  const navigate = useNavigate();
+
+  const onNavigateTo = (url) => navigate(url);
 
   return (
     <HeaderContainer>
@@ -22,6 +27,7 @@ export const HeaderLayout = () => {
       <DrawerLayout
         isVisibleDrawer={isVisibleDrawer}
         onSetIsVisibleDrawer={setIsVisibleDrawer}
+        onNavigateTo={onNavigateTo}
       />
     </HeaderContainer>
   );

@@ -23,7 +23,7 @@ export const Home = () => {
         <div className="text">
           <p>DevPool presenta:</p>
           <h2>TECNOLOGÍAS</h2>
-          <h1>IA CIBERSEGURIDAD Y SISTEMAS EXPERTOS</h1>
+          <h1>IA, CIBERSEGURIDAD Y SISTEMAS EXPERTOS</h1>
         </div>
         <div className="buttonMenu">
           <Link className="link" to="/menu">

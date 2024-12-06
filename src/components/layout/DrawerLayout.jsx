@@ -13,6 +13,9 @@ export const DrawerLayout = ({
       key: "sub1",
       label: "IA",
       icon: <FontAwesomeIcon icon={faRobot} style={{ fontSize: "1em" }} />,
+      onClick: () => {
+        onNavigateTo("/ia"), onSetIsVisibleDrawer(false);
+      },
     },
     {
       key: "sub2",
@@ -35,6 +38,9 @@ export const DrawerLayout = ({
       icon: (
         <FontAwesomeIcon icon={faUserSecret} style={{ fontSize: "1.2em" }} />
       ),
+      onClick: () => {
+        onNavigateTo("/cibersecurity"), onSetIsVisibleDrawer(false);
+      },
     },
   ];
 

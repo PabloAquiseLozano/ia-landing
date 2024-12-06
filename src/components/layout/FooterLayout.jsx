@@ -18,11 +18,15 @@ export const FooterLayout = () => {
 const Container = styled.div`
   width: 100vw;
   .options {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+      monospace;
+    padding: 0.7em 0;
     ul {
       display: flex;
       list-style-type: none;
       gap: 2em;
       justify-content: center;
+      align-items: center;
     }
   }
 `;
